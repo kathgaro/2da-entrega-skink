@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arima', cursive;
+}
+
+/*bs-nav*/
+.k-bg-nav{
+    background-color: #453404a9;
+    color: #ffffff;
+}
+.k-bg-nav a{
+    color: white;
+    text-align: center;
+}
+.k-bg-nav a:hover{
+    background: #f0f8ff7d;
+    border-radius: 1em;
+    color: #ffffff;
+}
+/* menu */
+
+.cabeza__envios{
+    font-size: 0.7em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.cabeza__menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3em;
+}
+.cabeza__menu--logo{
+    font-weight: 700;
+}
+.cabeza__menu ul{
+    display: flex;
+    width: 24rem;
+    justify-content: space-around;
+}
+
+.cabeza__menu ul li{
+    list-style: none;
+}
+.cabeza__menu ul li a{
+    text-decoration: none;
+    font-size: 1em;
+}
+.cabeza-backimg{
+    background-image: url(../img/backg-skin.jpg);
+    background-position: center;
+    height: 18em;
+    background-size: cover;
+}
+/*bs - main*/
+.btn-k{
+    background: #97740c;
+}
+.btn-k:hover{
+    background: #453404;
+}
+.k-accordion:not(.collapsed){
+    background-color: #5f5f5f;
+    color: white;
+}
+/* aside */
+.publi{
+    color: #000000;
+    padding: 2em;
+}
+.publi form{
+    width: 35%;
+}
+.publi fieldset{
+    border: none;
+    margin-bottom: 1em;
+}
+.publi section {
+    margin-top: 2em;
+}
+/* galeria */
+.galeria h2{
+    text-align: center;
+    margin: 1em 1em;
+}
+.galeria_cont{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+.galeria__producto{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+.galeria__producto img{
+    width: 14em;
+}
+.btn_prod{
+    background: black;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 16px;
+}
+
+.pie_copy{
+    text-align: center;
+    padding: 10px 10px;
+}
+/*desktop a mobile
+tablet 768px
+mobile 480px
+
+nota: 
+- Solo vamos a declarar dentro de la mq los cambios a realizar, no agregamos/repetimos el mismo codigo 
+
+
+*/
+
+@media (max-width: 768px){
+    
+    .btn_prod{
+        background: #095ce1;
+        color: white;
+        border: none;
+        width: 100%;
+        height: 50px;
+        border-radius: 16px;
+    }
+    
+}
+@media (max-width: 480px){
+   
+    .cabeza__menu{
+        height: 5em;
+        flex-direction: column;
+    }
+    .cabeza__menu ul li a{
+      
+        font-size: 4em;
+    }
+}
+/*
+@media(min-width: 420px) and (max-width: 768px){
+    .grid-container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 0.2fr 0.5fr 1fr 0.10fr;
+        grid-template-areas: 
+                "cabeza "
+                "  publi  "
+                "galeria "
+                "pie          "
+        ;
+        background-color: rgb(179, 222, 243);
+    }
+
+}*/
