@@ -1,0 +1,58 @@
+// bs -nav
+
+.k-bg-nav{
+    background-color: $brown;
+    color: $white;
+    a{
+        color: $white;
+        text-align: center;
+        &:hover{
+            background: $gray;
+            border-radius: 1em;
+            color: $white;
+        }
+    }
+}
+
+/* menu */
+.cabeza{
+    &-backimg{
+        @include image-bg ($bg-menu, center, cover);
+        height: 18em;
+    }
+    &__envios{
+        font-size: $xxs;
+        background-color:$black;
+        color: map-get($txt-parrafos, gris);
+        text-align: map-get($txt-parrafos, txt-align );
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    &__menu{
+        @include flex-jc;
+        align-items: center;
+        height: 3em;
+        background-color: map-get($color-bg, mostaza );
+
+        &--logo{
+            font-weight: 700;
+        }
+
+        ul{
+            width: 24rem;
+            @include flex-jc;
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    font-size: map-get($size, sm )
+                }
+            }
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+//Revisar codigo y 
+
+//con parametros (puedo definir que cambiar)
+//✨imagen de background
+@mixin image-bg($img, $pos, $sz){
+    background-image: $img ;
+    background-position: $pos;
+    background-size: $sz;
+}
+
+@mixin w-h($w, $h){
+    width: $w;
+    height: $h;
+}
+
+//sin parametros (este va a ser un bloque de codigo que podre reutilizar)
+
+//declaramos el mixin - fragmento de codigo
+@mixin flex-jc{
+    display: flex;
+    justify-content: space-around;
+}
+

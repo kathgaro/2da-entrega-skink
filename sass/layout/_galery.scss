@@ -1,0 +1,21 @@
+.galeria{
+    h2{
+        text-align: center;
+        margin: 1em 1em;
+    }
+    &_cont{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    }
+    &__producto{
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+            img{
+                width: 14em;
+            }
+    }
+}
+
+

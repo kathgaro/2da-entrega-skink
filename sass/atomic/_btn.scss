@@ -1,0 +1,13 @@
+.btn{
+    //galery
+    &_prod{
+        background: $black;
+        color: $white;
+        border: none;
+        @include w-h (100%, 30px);
+        border-radius: 16px;
+        &:hover{
+            background: $brown-h;
+        }
+    }
+}

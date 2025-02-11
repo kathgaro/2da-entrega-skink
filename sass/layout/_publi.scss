@@ -1,0 +1,33 @@
+.btn-k{
+     background: $mostaza;
+     &:hover{
+        background: $brown-h;
+    }
+}
+
+.k-accordion:not(.collapsed){
+    background-color: $gray;
+    color: $white;
+}
+/* aside */
+.publi{
+    color: $black;
+    padding: 2em;
+    form{
+    width: 50%;
+        input{
+            border-radius: 16px;
+            height: 33px;
+        }
+        fieldset{
+            border: none;
+            margin-bottom: 1em;
+            legend{
+                font-size: $xsm;
+            }
+        }
+    }
+    section {
+    margin-top: 2em;
+    }
+}

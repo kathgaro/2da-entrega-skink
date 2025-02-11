@@ -1,0 +1,48 @@
+//colores
+$white: #ffffff;
+$black: #000000;
+$gray: #5f5f5f;
+$brown: #453404a9;
+$brown-h:#453404;
+$mostaza: #97740c;
+
+$txt-parrafos:(
+    gris: #808080,
+    txt-align: justify,
+    fontsz: 3em,
+    padding: 1.3em,
+);
+//    map-get ($txt-parrafos,  fontsz ) = 3em
+
+$color-bg:(
+    white: $white,
+    black: #000000,
+    gray: #5f5f5f,
+    brown: #453404a9,
+    brown-h:#453404,
+    mostaza: #97740c,
+);
+// arcoiris   colors
+@each $arcoiris, $colors in $color-bg{
+    .paleta-#{$arcoiris}{
+        background-color: $colors;
+        color: #ffffff;
+    }
+}
+
+
+$size:(
+    xs: 0.5em,
+    sm: 1em,
+    md: 1.5em,
+    lg: 3em,
+);
+//  ☝     ☝
+// pepito  pepita
+
+@each $pepito, $pepita in $size{
+    .comi-#{$pepito}{
+        font-size: $pepita;
+        text-align: center;
+    }
+}

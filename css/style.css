@@ -22,7 +22,7 @@
 
 .cabeza__envios{
     font-size: 0.7em;
-    background-color: black;
+    background-color: hsl(0, 0%, 0%);
     color: white;
     text-align: center;
     text-transform: uppercase;

@@ -1,0 +1,32 @@
+//Todos mis estilos estaran enlazados aqui
+
+/*
+
+🌟 Reset - margin, padding, tipograf
+colores
+tamaños de tipografias
+
+👉 cabeza - header
+👉 cuerpo - main
+👉 pie - footer
+👉 media queries
+
+*/
+//reset
+
+@import './config/mixin';
+@import './config/tipo';
+@import './config/colors';
+@import './config/images';
+@import './config/sizes';
+@import './atomic/btn';
+@import './config/reset';
+
+//layout
+@import './layout/menu';
+@import './layout/publi';
+@import './layout/galery';
+@import './layout/pie';
+
+//media queries
+@import './config/mq';
